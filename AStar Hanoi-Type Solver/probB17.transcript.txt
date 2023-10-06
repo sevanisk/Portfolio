@@ -1,0 +1,189 @@
+./a.exe
+
+DEPTH: 0
+HEURISTIC VALUE: 12
+STATE:
+A D
+H
+C E F J
+B I
+G
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 1
+HEURISTIC VALUE: 12
+STATE:
+A
+H D
+C E F J
+B I
+G
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 2
+HEURISTIC VALUE: 11
+STATE:
+
+H D A
+C E F J
+B I
+G
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 3
+HEURISTIC VALUE: 10
+STATE:
+I
+H D A
+C E F J
+B
+G
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 4
+HEURISTIC VALUE: 9
+STATE:
+I A
+H D
+C E F J
+B
+G
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 5
+HEURISTIC VALUE: 8
+STATE:
+I A B
+H D
+C E F J
+
+G
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 6
+HEURISTIC VALUE: 7
+STATE:
+I A B
+H
+C E F J
+D
+G
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 7
+HEURISTIC VALUE: 7
+STATE:
+I A B
+H J
+C E F
+D
+G
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 8
+HEURISTIC VALUE: 6
+STATE:
+I A B
+H J
+C E
+D F
+G
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 9
+HEURISTIC VALUE: 5
+STATE:
+I A B 
+H
+C E
+D F J
+G
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 10
+HEURISTIC VALUE: 4
+STATE:
+I A
+H
+C E
+D F J B
+G
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 11
+HEURISTIC VALUE: 3
+STATE:
+I A
+
+C E
+D F J B H
+G
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 12
+HEURISTIC VALUE: 3
+STATE:
+I A E
+
+C
+D F J B H
+G
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 13
+HEURISTIC VALUE: 3
+STATE:
+I A E G
+
+C
+D F J B H
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 14
+HEURISTIC VALUE: 2
+STATE:
+I A E G
+
+
+D F J B H
+C
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 15
+HEURISTIC VALUE: 1
+STATE:
+I A E
+
+G
+D F J B H
+C
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 16
+HEURISTIC VALUE: 0
+STATE:
+I A
+
+G
+D F J B H
+C E
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+TOTAL ITERATIONS: 18

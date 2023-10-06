@@ -1,0 +1,91 @@
+compiler = g++
+compiler_flags = -std=c++11
+
+heuristic ?= 0
+file ?= ""
+
+.PHONY: all clean
+
+all: blocksworld
+
+blocksworld: *.cpp 
+	$(compiler) $(compiler_flags) *.cpp
+
+clean:
+	rm -f blocksworld.cpp
+
+run: blocksworld.cpp
+	$(compiler) $(compiler_flags) *.cpp
+	./a.exe
+
+
+
+
+compiler = g++
+compiler_flags = -std=c++11
+
+heuristic ?= 3
+file ?= ""
+executable = a.exe
+
+.PHONY: all clean
+
+all: blocksworld
+
+blocksworld: *.cpp
+	$(compiler) $(compiler_flags) -o $@ $^
+
+./a.exe: *.cpp 
+	$(compiler) $(compiler_flags) -o $@ $^
+
+clean:
+	rm -f ./a.exe
+
+run: $(executable)
+	./$(executable) -f $(file) -H $(heuristic)
+
+
+
+
+    WORKS IN LOCAL
+
+    compiler = g++
+compiler_flags = -std=c++11
+
+heuristic ?= 3
+file ?= "probs/probB03.bwp"
+executable = a.exe
+
+blocksworld: *.cpp 
+	$(compiler) $(compiler_flags) -o $@ $^
+
+clean:
+	rm -f *.cpp
+
+run: *.cpp
+	$(compiler) $(compiler_flags) *.cpp -f $(file) -H $(heuristic)
+	./a.exe
+
+
+
+
+WORKED:
+compiler = g++
+compiler_flags = -std=c++11
+
+heuristic ?= 3
+file ?= ""
+executable = blocksworld
+
+.PHONY: all clean
+
+all: $(executable)
+
+$(executable): *.cpp 
+	$(compiler) $(compiler_flags) -o $@ $^
+
+clean:
+	rm -f *.cpp
+
+run: $(executable)
+	./blocksworld -f $(file) -H $(heuristic)

@@ -1,0 +1,202 @@
+./a.exe 
+
+DEPTH: 0
+HEURISTIC VALUE: 11
+STATE:
+B C J
+F H
+A D E I
+G
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 1
+HEURISTIC VALUE: 10
+STATE:
+B C
+F H
+A D E I
+G J
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 2
+HEURISTIC VALUE: 10
+STATE:
+B
+F H
+A D E I C
+G J
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 3
+HEURISTIC VALUE: 10
+STATE:
+B 
+F
+A D E I C
+G J H
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 4
+HEURISTIC VALUE: 10
+STATE:
+B F
+
+A D E I C
+G J H
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 5
+HEURISTIC VALUE: 9
+STATE:
+B F
+C
+A D E I
+G J H
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 6
+HEURISTIC VALUE: 9
+STATE:
+B F
+C
+A D E
+G J H I
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 7
+HEURISTIC VALUE: 8
+STATE:
+B F
+C E
+A D
+G J H I
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 8
+HEURISTIC VALUE: 7
+STATE:
+B F
+C E
+A
+G J H I
+D
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 9
+HEURISTIC VALUE: 7
+STATE:
+B
+C E F
+A
+G J H I
+D
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 10
+HEURISTIC VALUE: 6
+STATE:
+
+C E F
+A
+G J H I 
+D B
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 11
+HEURISTIC VALUE: 5
+STATE:
+A
+C E F
+
+G J H I
+D B
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 12
+HEURISTIC VALUE: 4
+STATE:
+A
+C E
+F
+G J H I
+D B
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 13
+HEURISTIC VALUE: 3
+STATE:
+A I
+C E
+F
+G J H
+D B
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 14
+HEURISTIC VALUE: 3
+STATE:
+A I
+C E H
+F
+G J
+D B
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 15
+HEURISTIC VALUE: 2
+STATE:
+A I J 
+C E H
+F
+G
+D B
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 16
+HEURISTIC VALUE: 1
+STATE:
+A I J
+C E H
+F G
+
+D B
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 17
+HEURISTIC VALUE: 0
+STATE:
+A I J
+C E
+F G H
+
+D B
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+TOTAL ITERATIONS: 75
+
+STATISTICS: probB20.bwp planlen 17 iter 75 maxq 781

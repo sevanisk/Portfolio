@@ -1,0 +1,114 @@
+./a.exe 
+
+DEPTH: 0
+HEURISTIC VALUE: 9
+STATE:
+D I J
+B C
+E G
+H
+A F
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 1
+HEURISTIC VALUE: 8
+STATE:
+D I J G
+B C
+E
+H
+A F
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 2
+HEURISTIC VALUE: 7
+STATE:
+D I J G
+B C
+E F
+H
+A
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 3
+HEURISTIC VALUE: 6
+STATE:
+D I J
+B C
+E F G
+H
+A
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 4
+HEURISTIC VALUE: 5
+STATE:
+D I
+B C
+E F G J
+H
+A
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 5
+HEURISTIC VALUE: 4
+STATE:
+D I 
+B
+E F G J
+H
+A C
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 6
+HEURISTIC VALUE: 3
+STATE:
+D I
+B
+E F G J
+
+A C H
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 7
+HEURISTIC VALUE: 2
+STATE:
+D
+B
+E F G J
+I
+A C H
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 8
+HEURISTIC VALUE: 1
+STATE:
+D
+
+E F G J
+I B
+A C H
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+DEPTH: 9
+HEURISTIC VALUE: 0
+STATE:
+
+D
+E F G J
+I B
+A C H
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+TOTAL ITERATIONS: 9
+
+STATISTICS: probB12.bwp planlen 9 iter 9 maxq 120

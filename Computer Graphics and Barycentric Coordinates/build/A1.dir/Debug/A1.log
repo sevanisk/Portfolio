@@ -1,0 +1,73 @@
+﻿  main.cpp
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(25,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(40,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(43,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(44,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(45,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(92,40): warning C4244: 'argument': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(92,29): warning C4244: 'argument': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(92,20): warning C4244: 'argument': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(105,35): warning C4244: 'argument': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(105,23): warning C4244: 'argument': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(105,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(105,14): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(137,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(138,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(139,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(140,38): warning C4244: 'argument': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(140,29): warning C4244: 'argument': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(140,20): warning C4244: 'argument': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(158,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(164,38): warning C4244: 'argument': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(164,29): warning C4244: 'argument': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(164,20): warning C4244: 'argument': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(255,34): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(307,143): warning C4244: 'argument': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(307,128): warning C4244: 'argument': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(307,98): warning C4244: 'argument': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(307,83): warning C4244: 'argument': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(307,53): warning C4244: 'argument': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(307,38): warning C4244: 'argument': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(327,20): warning C4244: 'initializing': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(328,20): warning C4244: 'initializing': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(329,20): warning C4244: 'initializing': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(345,20): warning C4244: 'initializing': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(346,20): warning C4244: 'initializing': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(347,20): warning C4244: 'initializing': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(365,21): warning C4244: 'initializing': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(366,21): warning C4244: 'initializing': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(367,21): warning C4244: 'initializing': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(369,21): warning C4244: 'initializing': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(370,21): warning C4244: 'initializing': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(371,21): warning C4244: 'initializing': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(373,21): warning C4244: 'initializing': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(374,21): warning C4244: 'initializing': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(375,21): warning C4244: 'initializing': conversion from 'float' to 'unsigned char', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(397,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(397,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\sophia\Desktop\C++\441\A1\src\main.cpp(420,30): warning C4244: 'argument': conversion from 'float' to 'unsigned char', possible loss of data
+  A1.vcxproj -> C:\Users\sophia\Desktop\C++\441\A1\build\Debug\A1.exe

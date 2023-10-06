@@ -1,0 +1,10 @@
+^C:\USERS\SOPHIA\DESKTOP\C++\441\A1\BUILD\CMAKEFILES\A0325771A5F44189FDA6BBC86340723E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sophia/Desktop/C++/441/A1 -BC:/Users/sophia/Desktop/C++/441/A1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/sophia/Desktop/C++/441/A1/build/A1.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,105 @@
+HEURISTIC h4()
+
+THE BASIC ALGORITHM
+For each letter in the state:
++2 to heuristic if letter is in the wrong spot in the right row (it must at least be moved out of the row (+1) and back into the row (+1))
++1 to heuristic if letter is in the wrong row (it must at least be moved out of the current row to the correct row (+1))
++0 if the letter is in the right spot in the right row, and every letter below it is also in the right spot in the right row
++2 if the letter is in the right spot in the right row, but at least one letter below it is in the wrong spot 
+(it will need to at least be moved out of the row (+1) and back into the row(+1))
+
+The heuristic function looks at the current state row by row, starting from the top left corner of the state and working down to the bottom right.
+In each row, it starts at the first letter (the bottom of the stack) and looks at each letter one by one. 
+If the current letter is in the right row, and the right spot in that row, +0 is added to the heuristic.
+
+However, if the letter is in the wrong row, or in the wrong spot in the right row, it needs to be moved -- and so does every letter above it,
+hence the purpose of the boolean below_bad. 
+
+If below_bad is true, then all of the following letters will add at least +1 to the heuristic (even if they are in the right spot, they will need to be moved
+to reach the incorrect letter lower in the stack)
+
+EXAMPLE 1
+if the goal is
+AB 
+C
+DEFG
+
+and the state is
+A 
+CB 
+DFEG
+
+then the heuristic is the sum of
+A -> +0 (right stack, right spot)
+B -> +1 (wrong stack, below_bad set to true for the rest of this stack)
+C -> +0 (right stack, right spot)
+D -> +0 (right stack, right spot)
+E -> +2 (right stack, wrong spot, below_bad set to true for the rest of this stack)
+F -> +2 (right stack, wrong spot)
+G -> +2 (right stack, right spot, BUT below_bad is true so we know the letters below it need to be moved, so it must move too)
+
+so heuristic = 7
+
+
+EXAMPLE 2
+if the goal is
+ACDE
+
+B
+
+and the state is
+ADBCE
+
+
+then the heuristic is the sum of
+A -> +0 (right stack, right spot)
+D -> +2 (right stack, wrong spot, below_bad set to true for the rest of this stack)
+B -> +1 (wrong row)
+C -> +2 (right stack, wrong spot, below_bad set to true for the rest of this stack)
+E -> +2 (right stack, right spot, BUT below_bad is true so we know the letters below it need to be moved, so it must move too)
+
+so heuristic = 7
+
+
+EXPLANATION
+1) We want to heavily penalize moving a letter to its correct spot but on top of a letter in an incorrect spot 
+
+2) If a letter is in the right spot, and all the letters below it are in the right spot, we NEVER want to move it
+
+3) It is usually better to move a letter to the wrong row than to the wrong spot in the right row
+
+Note: In most cases this runs basically optimally, but here's the only issue I've found -- what happens if no movement 
+brings you closer to the solution? What if, to get to a lower letter, you need to move a letter from a wrong row to a wrong row?
+This is something my heuristic can't really take in to account without completely breaking, so in test cases like B19 it just has to guess
+
+
+
+STATISTICS:
+STATISTICS: probA03.bwp planlen 3 iter 3 maxq 7
+STATISTICS: probA04.bwp planlen 4 iter 4 maxq 8
+STATISTICS: probA05.bwp planlen 5 iter 10 maxq 27
+STATISTICS: probA06.bwp planlen 7 iter 9 maxq 23
+STATISTICS: probA07.bwp planlen 7 iter 10 maxq 22
+STATISTICS: probA08.bwp planlen 13 iter 22 maxq 42
+STATISTICS: probA09.bwp planlen 9 iter 13 maxq 31
+STATISTICS: probA10.bwp planlen 13 iter 20 maxq 40
+STATISTICS: probA11.bwp planlen 15 iter 28 maxq 50
+
+STATISTICS: probB03.bwp planlen 3 iter 3 maxq 42
+STATISTICS: probB04.bwp planlen 4 iter 4 maxq 63
+STATISTICS: probB05.bwp planlen 5 iter 5 maxq 71
+STATISTICS: probB06.bwp planlen 6 iter 6 maxq 64
+STATISTICS: probB07.bwp planlen 7 iter 7 maxq 75
+STATISTICS: probB08.bwp planlen 10 iter 15 maxq 126
+STATISTICS: probB09.bwp planlen 9 iter 11 maxq 106
+STATISTICS: probB10.bwp planlen 15 iter 20 maxq 259
+STATISTICS: probB11.bwp planlen 10 iter 12 maxq 127
+STATISTICS: probB12.bwp planlen 9 iter 9 maxq 120
+STATISTICS: probB13.bwp planlen 17 iter 42 maxq 452
+STATISTICS: probB14.bwp planlen 16 iter 28 maxq 323
+STATISTICS: probB15.bwp planlen 19 iter 46 maxq 622
+STATISTICS: probB16.bwp planlen 21 iter 53 maxq 572
+STATISTICS: probB17.bwp planlen 16 iter 18 maxq 229
+STATISTICS: probB18.bwp planlen 15 iter 16 maxq 180
+STATISTICS: probB19.bwp FAILED
+STATISTICS: probB20.bwp planlen 19 iter 75 maxq 781
